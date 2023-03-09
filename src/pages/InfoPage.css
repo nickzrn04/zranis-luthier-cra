@@ -1,0 +1,77 @@
+.someInfo {
+  margin-top: 120px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 1000px;
+  margin: 0;
+}
+
+.hero img {
+  margin: 7px;
+  height: 320px;
+  width: 100%;
+}
+
+main {
+  background-color: rgb(250, 234, 209);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.infoImg {
+  width: 700px;
+  height: 440px;
+  margin: auto;
+  position: relative;
+  background-color: black;
+}
+
+.nextR {
+  position: absolute;
+  bottom: 50%;
+  right: 15px;
+  border-radius: 50%;
+  border: none;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.699);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+}
+
+.nextL {
+  position: absolute;
+  bottom: 50%;
+  left: 15px;
+  border-radius: 50%;
+  border: none;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  transition: 0.2;
+}
+
+.infoPictures {
+  height: 100%;
+  width: 100%;
+}
+
+.text--images {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+@media all and (max-width: 767px) {
+  .text--images {
+    display: none;
+  }
+  .hero {
+    width: 500px;
+    margin-left: 90px;
+  }
+}

@@ -1,0 +1,36 @@
+.types {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 80px;
+  margin: 200px auto 30px auto;
+}
+
+.types div {
+  align-items: center;
+  height: 400px;
+  margin: none;
+}
+
+.types img {
+  object-fit: contain;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.category--title:hover {
+  text-align: center;
+  width: 100%;
+  background-color: rgba(216, 170, 114, 0.473);
+}
+
+@media all and (max-width: 767px) {
+  .types {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+  }
+}
+

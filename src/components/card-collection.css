@@ -1,0 +1,306 @@
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card {
+  margin-top: 70px;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  border: solid 1px;
+  background-color: rgb(245, 203, 165)
+}
+
+.card p {
+  font-family: Monsterat;
+  padding: 8px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.card--pictures {
+  position: relative;
+}
+
+.card--info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.cardContainer {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  
+}
+
+.card--stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.card--price {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 790px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(202, 141, 66);
+  align-items: center;
+}
+
+.card--price p {
+  padding: 0px;
+}
+
+.description-h {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.imgDiv {
+  position: relative;
+  background-color: white;
+  height: 100%;
+}
+
+.nextR {
+  position: absolute;
+  bottom: 50%;
+  right: 15px;
+  border-radius: 50%;
+  border: none;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.699);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+}
+
+.nextL {
+  position: absolute;
+  bottom: 50%;
+  left: 15px;
+  border-radius: 50%;
+  border: none;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  transition: 0.2;
+}
+
+.imgDiv button:hover {
+  opacity: 0.9;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 200px;
+  height: 620px;
+  margin-left: 30px;
+  padding: 7px;
+  position: fixed;
+  background-color: rgb(243, 207, 163);
+}
+
+select {
+  font-size: medium;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  border: solid 1px;
+}
+
+.categories  button, .categories u {
+  border: solid rgb(248, 223, 191);
+  border-top: 1px;
+  background-color: rgb(243, 207, 163);
+  padding-block: 5px;
+  font-family: Monsterat;
+  font-weight: 700;
+  font-size: medium;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.categories u {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(241, 176, 97);
+}
+
+.categories button:hover {
+  background-color: rgba(250, 191, 118, 0.623);
+}
+
+.filters--3 {
+  display: flex;
+  flex-direction: column;
+}
+.filters--3 h4 {
+  cursor: pointer;
+}
+.card--description {
+  width: 500px;
+  text-align: center;
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1000px) {
+  body,main,section,.card,.cardContainer {
+    width: 100%;
+  }
+  header {
+    justify-content: center;
+  }
+  .collection--hero {
+    flex-direction: column;
+  }
+  .filters {
+    flex-direction: column;
+    margin-top: 130px;
+    height: 80px;
+    position: relative;
+    background-color: bisque;
+    width: 100%;
+    margin: 120px auto 0;
+  }
+  .categories {
+    flex-direction: row;
+    height: 50px;
+    margin-top: 3px;
+    justify-content: space-between;
+    background-color: rgb(243, 207, 163);
+  }
+  .cardContainer {
+    margin-top: 0px;
+  }
+  .price--info {
+    display: inline;
+    width: 80%;
+    display: inline;
+  }
+  .allStats {
+    flex-direction: column;
+  }
+  .card--price {
+    width: 100%;
+  }
+  .filters img {
+    width: 30%;
+  }
+  .filters--3 {
+    flex-direction: row; 
+    margin: 0;
+    align-items: center;
+    float: left;
+  }
+  .filters h4 {
+    margin: 0 7px 0 0;
+    margin-top: 0px;
+  }
+  .imgDiv {
+    margin: auto;
+  }
+  .description {
+    margin-bottom: 10px;
+  }
+  .cardContainer {
+    width: 96%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  body,main,section,.card,.cardContainer {
+    width: 100%;
+  }
+  header {
+    justify-content: center;
+  }
+  .collection--hero {
+    flex-direction: column;
+  }
+  .filters {
+    flex-direction: column;
+    margin-top: 130px;
+    height: 80px;
+    position: relative;
+    background-color: bisque;
+    width: 130%;
+    margin: 120px auto 0;
+  }
+  .categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100%;
+    margin-top: 3px;
+    justify-content: space-between;
+    background-color: rgb(243, 207, 163);
+  }
+  .cardContainer {
+    margin-top: 50px;
+  }
+  .price--info {
+    display: inline;
+    width: 80%;
+    display: inline;
+  }
+  .allStats {
+    flex-direction: column;
+  }
+  .card--price {
+    width: 100%;
+  }
+  .filters img {
+    width: 30%;
+  }
+  .filters--3 {
+    flex-direction: row; 
+    margin: 0;
+    align-items: center;
+    float: left;
+  }
+  .filters h4 {
+    margin: 0 7px 0 0;
+    margin-top: 0px;
+  }
+  .imgDiv {
+    margin: auto;
+  }
+  .description {
+    margin-bottom: 10px;
+  }
+  .cardContainer {
+    width: 96%;
+    margin-left: 59px;
+    margin-right: auto;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .card h1 {
+    float: top;
+  }
+  .card--description {
+    width: 300px;
+    overflow-wrap: break-word;
+  }
+}
