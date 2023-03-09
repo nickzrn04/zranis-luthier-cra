@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nickzrn04/zranis-luthier-cra.git/static/css/main.36c35d5a.css",
+    "main.js": "/nickzrn04/zranis-luthier-cra.git/static/js/main.88af2a83.js",
+    "index.html": "/nickzrn04/zranis-luthier-cra.git/index.html",
+    "main.36c35d5a.css.map": "/nickzrn04/zranis-luthier-cra.git/static/css/main.36c35d5a.css.map",
+    "main.88af2a83.js.map": "/nickzrn04/zranis-luthier-cra.git/static/js/main.88af2a83.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36c35d5a.css",
+    "static/js/main.88af2a83.js"
+  ]
+}
