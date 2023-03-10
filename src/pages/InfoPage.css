@@ -65,6 +65,9 @@ main {
   flex-direction: column;
   margin-left: 50px;
 }
+.repairParagraph {
+  background-color: rgb(250, 245, 215);
+}
 
 @media all and (max-width: 767px) {
   .text--images {

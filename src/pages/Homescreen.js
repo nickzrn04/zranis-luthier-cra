@@ -29,10 +29,12 @@ function Homescreen(props) {
                 <button><img src="../material/photos/laouto/laouto front.jpg"/></button>
               </div>
             </Link>
+            <Link to='/someInfo'>
             <div>
               <u><p>{props.language=='gr'?'Επισκευές':'We repair'}</p></u>
               <button><img src="../material/photos/repair/mantolino(after).jpg"/></button>
             </div>
+            </Link>
         </div>
         <div className='floor2' style={{justifyContent: "space-between", alignItems: "center"}}>
           <YoutubeEmbed embedId='lRvu2bJBflw'/>

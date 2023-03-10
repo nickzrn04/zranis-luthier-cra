@@ -17,19 +17,19 @@ export default function Categories(props) {
         </div></Link>
         <Link to="/Κιθαρα">
           <div value="Κιθαρα" style={{display: "flex", flexDirection: "column"}}>
-          <img src="../material/photos/laouto/laouto front.jpg" alt="cant load"/>
+          <img src="../material/photos/guitar/rempeto 1.jpg" alt="cant load"/>
           <div className="category--title"><p>{props.language==='gr'?'Κιθάρα':'Guitar'}</p></div>
           </div>
         </Link>
         <Link to="/Τζουρας">
           <div value="Τζουρας" style={{display: "flex", flexDirection: "column"}}>
-          <img src="../material/photos/laouto/laouto front.jpg" alt="cant load"/>
+          <img src="../material/photos/tzouras/tzouras skaftos 3.jpg" alt="cant load"/>
           <div className="category--title"><p>{props.language==='gr'?'Τζουράς':'Tzouras'}</p></div>
           </div>
         </Link>
         <Link to="/Μπαγλαμας"> 
           <div value="Μπαγλαμας" style={{display: "flex", flexDirection: "column"}}>
-          <img src="../material/photos/laouto/laouto front.jpg" alt="cant load"/>
+          <img src="../material/photos/mpaglamas/mpaglamas 1.jpg" alt="cant load"/>
           <div className="category--title"><p>{props.language==='gr'?'Μπαγλαμάς':'Baglamas'}</p></div>
           </div> 
         </Link>
