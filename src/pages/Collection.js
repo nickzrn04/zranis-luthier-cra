@@ -92,7 +92,7 @@ export default function Collection(props) {
 
   function empty() {
     if(cardNumber===0) return(
-    <div className="empty" style={{marginTop:'330px', zIndex:'-1', position:'absolute',fontSize:'30px'}} >{props.language=='gr'?'Δεν υπάρχει ετοιμοπαράδωτο αυτής της κατηγορίας':'There are no available products of this categorie'}</div>)
+    <div className="empty" style={{marginTop:'330px', zIndex:'-1', position:'absolute',fontSize:'30px'}} >{props.language=='gr'?'Δεν υπάρχει ετοιμοπαράδωτο αυτής της κατηγορίας':'There are no available products of this category'}</div>)
     else return ""
   }
 

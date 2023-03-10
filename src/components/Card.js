@@ -16,6 +16,7 @@ export default function Card(props) {
 
   const figura = ()=><p>{props.language==='gr'?'Φιγούρα:':'Figure:'}<span style={{color: "brown"}}>{props.φιγούρα}</span></p>;
   const doyges = ()=><p>{props.language==='gr'?'Αριθμός δουγών:':'Srips:'}<span style={{color: "brown"}}>{props.αριθμόςΔουγών}</span></p>;
+  const available = ()=><div className="availDiv">{props.language==='gr'?'Ετοιμοπαράδωτο':'Available'}</div>
 
   return (
     <div className="card">
@@ -41,6 +42,7 @@ export default function Card(props) {
           <p>{props.language==='gr'?'Κλειδιά:':'Tuners:'} <span style={{color: "brown"}}>{props.κλειδιά}</span></p>
           {props.φιγούρα==="0"?"":figura()}
           <p>{props.language==='gr'?'Λούστρο:':'Varnish:'} <span style={{color: "brown"}}>{props.λούστρο}</span></p>
+          {props.avail===true?available():""}
         </div>
 
       </div>

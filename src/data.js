@@ -75,7 +75,7 @@ export default [
   description: "Στην τιμή δεν συμπεριλαμβάνεται θήκη.",
   τιμή: 700,
   pictures: ["guitar/classic maoni 4.jpg","guitar/classic maoni 1.jpg","guitar/classic maoni 2.jpg","guitar/classic maoni 3.jpg"],
-  avail: true,
+  avail: false,
 },
 {
   title: "Κιθάρα κλασσική",
@@ -98,7 +98,6 @@ export default [
   description: "Επαγγελματικό εξάχορδο μπουζούκι. Ήχος μεσαίος. Στην τιμή δεν συμπεριλαμβάνεται θήκη.",
   τιμή: 700,
   pictures: ["guitar/classic 2.jpg","guitar/classic 1.jpg","guitar/classic 3.jpg"],
-  avail: true,
 },
 {
   title: "Κιθάρα κλασσική",
@@ -121,7 +120,7 @@ export default [
   description: "Επαγγελματικό εξάχορδο μπουζούκι. Ήχος μεσαίος. Στην τιμή δεν συμπεριλαμβάνεται θήκη.",
   τιμή: 700,
   pictures: ["guitar/rempeto 1.jpg","guitar/rempeto 2.jpg"],
-  avail:false,
+  avail:true,
 },
 
 {
