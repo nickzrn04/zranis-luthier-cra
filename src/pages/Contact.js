@@ -7,7 +7,7 @@ import { GoogleMap, useLoadScript, Marker} from "@react-google-maps/api"
 
 export default function Contact(props) {
   const { isLoaded} = useLoadScript({
-    googleMapsApiKey: "AIzaSyCjS9LQw6Fxspm9gGuviaVqi-4y6Z4esoI",
+    googleMapsApiKey: "AIzaSyAim571a6BKwaYekx51AAaIqaUz1WsLob4",
   });
   const center = React.useMemo(() => ({ lat: 37.908657, lng: 23.752010 }), []);
 
@@ -29,7 +29,7 @@ export default function Contact(props) {
     <div>
       <div className='contact--hero' style={{display: "flex"}}>
         <StyledContactForm>
-          <form ref={form} onSubmit={sendEmail}>
+          <form className='form' ref={form} onSubmit={sendEmail}>
             <label>{props.language=='gr'?'Όνομα':'Name'}</label>
             <input type="text" name="from_name" />
             <label>Email</label>
@@ -60,7 +60,7 @@ export default function Contact(props) {
 };
 
 const StyledContactForm = styled.div`
-  width: 400px;
+  width: 360px;
   margin-top: 160px;
   margin-left: 50px;
   margin-right: 200px;

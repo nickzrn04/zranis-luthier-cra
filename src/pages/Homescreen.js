@@ -14,7 +14,7 @@ function Homescreen(props) {
         <section>
           <p>{props.language=='gr'?'Οργανοποιείο Πέτρος Ζαράνης':'Petros Zaranis musical instruments'}</p> 
           <h1>{props.language=='gr'?'Κιθάρες | Μπουζούκια | Παραδοσιακά και αρχαία μουσικά όργανα | Επισκευές':'Guitars | Bouzoukis | Greek traditional instruments | Repairing'}</h1>
-          <img style={{width: "500px"}} src="../material/photos/guitar/rempeto 1.jpg"/>
+          <img style={{width: "500px", marginTop: "60px", marginBottom: "30px"}} src="../icons/magazi-mesa.jpg"/>
         </section>
         <div className="floor">
             <Link to='/categories'>

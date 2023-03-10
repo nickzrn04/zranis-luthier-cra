@@ -3,15 +3,19 @@ import Card from "../components/Card.js";
 import Header from "../components/Header";
 import data from "../data";
 
+let cardNumber = 0;
+
 export default function Collection(props) {
   const [categorie,setCategorie] = React.useState(props.type);
   const [cards,setCards] = React.useState([]);
   const [language, setLanguage] = React.useState(props.language);
   const [available, setAvailable] = React.useState(props.avail);
   React.useEffect(() => {
+    cardNumber=0;
     let arr=data.map(item => {
       if((available && item.avail) || !available) {
         if(item.type == categorie) {
+          cardNumber++;
           return (
             <Card
               key = {item.id}
@@ -26,9 +30,11 @@ export default function Collection(props) {
   },[])
 
   React.useEffect(() => {
+    cardNumber=0;
     let arr=data.map(item => {
       if((available && item.avail) || !available) {
         if(item.type == categorie) {
+          cardNumber++;
           return (
             <Card
               key = {item.id}
@@ -43,9 +49,11 @@ export default function Collection(props) {
   },[available])
 
   React.useEffect(() => {
+    cardNumber=0;
     let arr=data.map(item => {
       if((available && item.avail) || !available) {
         if(item.type == categorie) {
+          cardNumber++;
           return (
             <Card
               key = {item.id}
@@ -59,16 +67,38 @@ export default function Collection(props) {
     setCards(arr); 
   },[categorie])
 
+  React.useEffect(() => {
+    cardNumber=0;
+    let arr=data.map(item => {
+      if((available && item.avail) || !available) {
+        if(item.type == categorie) {
+          cardNumber++;
+          return (
+            <Card
+              key = {item.id}
+              {...item}
+              language = {language}
+            />
+          )
+        }
+      }
+    }) 
+    setCards(arr); 
+  },[language])
+
   function categorizeByUser(event) {
     setCategorie(event.target.value);
   }
 
-  const empty = ()=> <div style={{marginTop:'130px', zIndex:'-1', position:'absolute', left:'520px', fontSize:'30px'}} >{props.language=='gr'?'Δεν υπάρχει ετοιμοπαράδωτο αυτής της κατηγορίας':'There are no available products of this categorie'}</div>
+  function empty() {
+    if(cardNumber===0) return(
+    <div className="empty" style={{marginTop:'330px', zIndex:'-1', position:'absolute',fontSize:'30px'}} >{props.language=='gr'?'Δεν υπάρχει ετοιμοπαράδωτο αυτής της κατηγορίας':'There are no available products of this categorie'}</div>)
+    else return ""
+  }
 
 
   return (
     <div className="collection">
-      <h1 style={{marginTop:'180px', marginLeft:'auto', marginRight:'auto', textAlign:'center'}}>{categorie}</h1>
       <div className="collection--hero" style={{display: "flex"}}>
         <div className="filters">
           <div className="price--info">{props.language==='gr'?'Η τελική τιμή αυξάνεται με την προσθήκη διακόσμησης που επιλέγετε. Επικοινωνήστε μαζί μας αν ενδιαφέρεστε για ένα προιόν.':'The total price increases if you whish to add decoration. Contact with us in case you are interested in one of our products.'} </div>
@@ -92,6 +122,7 @@ export default function Collection(props) {
           </div>
         </div>
         <div className="cardContainer">
+          <h1 className="type-title" style={{marginTop:'160px',textAlign:'center'}}>{categorie}</h1>
           {cards}
           {empty()}
         </div>
