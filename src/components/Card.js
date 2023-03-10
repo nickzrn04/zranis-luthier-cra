@@ -20,7 +20,7 @@ export default function Card(props) {
   return (
     <div className="card">
     <div className="imgDiv">
-      <img id="card--pictures" src={`../υλικο/Φωτογραφιες/${props.pictures[image]}`}/>
+      <img id="card--pictures" src={`../material/photos/${props.pictures[image]}`}/>
       <button onClick={next} className="nextR">&#x3e;</button>
       <button onClick={prev} className="nextL">&#x3c;</button>
     </div>

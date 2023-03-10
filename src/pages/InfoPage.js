@@ -33,7 +33,7 @@ const enTxt = ()=> <div>
 
 export default function InfoPage(props) {
   const [image,setImage] = React.useState(0);
-  const pictures = ["../icons/μαγαζι-μεσα.jpg","../icons/guitar.jpg","../icons/φωνη.jpeg"]
+  const pictures = ["../icons/magazi-mesa.jpg","../icons/guitar.jpg","../icons/voice.jpeg"]
   function next() {
     if(image+1===pictures.length) {
       setImage(0);
@@ -52,8 +52,8 @@ export default function InfoPage(props) {
           {props.language=='gr'?grTxt():enTxt()}
         </div>
         <div className="text--images">
-          <img src="./icons/προφιλ.jpg"></img>
-          <img src="./icons/ουτι.jpg"></img>
+          <img src="./icons/profile.jpg"></img>
+          <img src="./icons/oud.jpg"></img>
         </div>
       </main>
       <div className="infoImg">

@@ -14,24 +14,24 @@ function Homescreen(props) {
         <section>
           <p>{props.language=='gr'?'Οργανοποιείο Πέτρος Ζαράνης':'Petros Zaranis musical instruments'}</p> 
           <h1>{props.language=='gr'?'Κιθάρες | Μπουζούκια | Παραδοσιακά και αρχαία μουσικά όργανα | Επισκευές':'Guitars | Bouzoukis | Greek traditional instruments | Repairing'}</h1>
-          <img style={{width: "500px"}} src="../υλικο/Φωτογραφιες/guitar/μπαουρδου(μπροστα).jpg"/>
+          <img style={{width: "500px"}} src="../material/photos/guitar/classic 2.jpg"/>
         </section>
         <div className="floor">
             <Link to='/categories'>
               <div>
                 <u><p>{props.language=='gr'?'Κατόπιν παραγγελίας':'Custom-made'}</p></u>
-                <button><img src="../υλικο/Φωτογραφιες/μπουζουκια/κουτσουρη μπροστα.jpg"/></button>               
+                <button><img src="../material/photos/bouzouki/koutsourh 1.jpg"/></button>               
               </div>
             </Link>
             <Link to='/categories2'>
               <div>
                 <u><p>{props.language=='gr'?'Ετοιμοπαράδωτα':'Available'}</p></u>
-                <button><img src="../υλικο/Φωτογραφιες/τζουρας/σκαφτος μπροστα.jpg"/></button>
+                <button><img src="../material/photos/laouto/laouto front.jpg"/></button>
               </div>
             </Link>
             <div>
               <u><p>{props.language=='gr'?'Επισκευές':'We repair'}</p></u>
-              <button><img src="../υλικο/Φωτογραφιες/ανακατασκευες/μαντολινο(μετα).jpg"/></button>
+              <button><img src="../material/photos/repair/mantolino(after).jpg"/></button>
             </div>
         </div>
         <div className='floor2' style={{justifyContent: "space-between", alignItems: "center"}}>
