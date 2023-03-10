@@ -36,12 +36,12 @@ function App() {
         <li><Link to="/contact">{language==='gr'?'Επικοινωνία':'Contact'}</Link></li>
       </ul>
       <div className="header--buttons" style={{display: "flex", marginRight: "30px"}}> 
-        <button ><Link to="/">{language=='gr'?'Αρχική':'Home'}</Link></button>
-        <button ><Link to="/categories">{language=='gr'?'Μουσικά όργανα':'Musical instruments'}</Link></button>
-        <button ><Link to="/someInfo">{language=='gr'?'Λίγα λόγια':'About'}</Link></button>
-        <button ><Link to="/contact">{language=='gr'?'Επικοινωνία':'Contact'}</Link></button>
-        <button onClick={()=>changeLanguage('gr')}><img src="../icons/Flag-Greece.jpg"/></button>
-        <button onClick={()=>changeLanguage('en')} style={{marginRight: "12px"}}><img src="../icons/english.webp"/></button>
+        <button ><Link to="/">{language==='gr'?'Αρχική':'Home'}</Link></button>
+        <button ><Link to="/categories">{language==='gr'?'Μουσικά όργανα':'Musical instruments'}</Link></button>
+        <button ><Link to="/someInfo">{language==='gr'?'Λίγα λόγια':'About'}</Link></button>
+        <button ><Link to="/contact">{language==='gr'?'Επικοινωνία':'Contact'}</Link></button>
+        <button onClick={()=>changeLanguage('gr')}><img src="../icons/Flag-Greece.jpg" alt='gr'/></button>
+        <button onClick={()=>changeLanguage('en')} style={{marginRight: "12px"}}><img src="../icons/english.webp" alt='en'/></button>
         <Outlet />
       </div>
       </header>
