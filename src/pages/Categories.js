@@ -12,7 +12,7 @@ export default function Categories(props) {
       <h1 style={{marginTop: "140px", marginBottom: "50px"}}>{props.language==='gr'?'Κατηγορίες μουσικών οργάνων':'Categories'}</h1>
       <div style={{margin: "0"}} className="types">
         <Link to="/Μπουζουκι"><div value="Μπουζουκι" style={{display: "flex", flexDirection: "column"}}>
-        <img src="../material/photos/laouto/laouto front.jpg" alt="cant load"/>
+        <img src="../material/photos/bouzouki/kapet 1 (1).jpg" alt="cant load"/>
         <div className="category--title"><p>{props.language==='gr'?'Μπουζούκι':'Bouzouki'}</p></div>
         </div></Link>
         <Link to="/Κιθαρα">

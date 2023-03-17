@@ -21,27 +21,29 @@ function App() {
     <>
     <BrowserRouter>
     <header className="header">
-      <div className="logo">
-        <div style={{fontSize: "35px",fontWeight: "700"}}>Οργανοποιείο</div>
-        <div style={{fontSize: "25px", fontWeight: "500", paddingLeft: "1px"}}>Πέτρος Ζαράνης</div>
+      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <div className="logo">
+          <div style={{fontSize: "35px",fontWeight: "700"}}>Οργανοποιείο</div>
+          <div style={{fontSize: "25px", fontWeight: "500", paddingLeft: "1px"}}>Πέτρος Ζαράνης</div>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label className='menu-button-container' htmlFor="menu-toggle">
+        <div className='menu-button'></div>
+        </label>
+        <ul className="menu">
+          <li><Link to="/">{language==='gr'?'Αρχική':'Home'}</Link></li>
+          <li><Link to="/categories">{language==='gr'?'Μουσικά όργανα':'Musical instruments'}</Link></li>
+          <li><Link to="/someInfo">{language==='gr'?'Λίγα λόγια':'About'}</Link></li>
+          <li><Link to="/contact">{language==='gr'?'Επικοινωνία':'Contact'}</Link></li>
+        </ul>
       </div>
-      <input id="menu-toggle" type="checkbox" />
-      <label className='menu-button-container' htmlFor="menu-toggle">
-       <div className='menu-button'></div>
-      </label>
-      <ul className="menu">
-        <li><Link to="/">{language==='gr'?'Αρχική':'Home'}</Link></li>
-        <li><Link to="/categories">{language==='gr'?'Μουσικά όργανα':'Musical instruments'}</Link></li>
-        <li><Link to="/someInfo">{language==='gr'?'Λίγα λόγια':'About'}</Link></li>
-        <li><Link to="/contact">{language==='gr'?'Επικοινωνία':'Contact'}</Link></li>
-      </ul>
-      <div className="header--buttons" style={{display: "flex", marginRight: "30px"}}> 
-        <button ><Link to="/">{language==='gr'?'Αρχική':'Home'}</Link></button>
-        <button ><Link to="/categories">{language==='gr'?'Μουσικά όργανα':'Musical instruments'}</Link></button>
-        <button ><Link to="/someInfo">{language==='gr'?'Λίγα λόγια':'About'}</Link></button>
-        <button ><Link to="/contact">{language==='gr'?'Επικοινωνία':'Contact'}</Link></button>
-        <button onClick={()=>changeLanguage('gr')}><img src="../icons/Flag-Greece.jpg" alt='gr'/></button>
-        <button onClick={()=>changeLanguage('en')} style={{marginRight: "12px"}}><img src="../icons/english.webp" alt='en'/></button>
+      <div style={{display: "flex", marginRight: "30px"}}> 
+        <button className="header--buttons"><Link to="/">{language==='gr'?'Αρχική':'Home'}</Link></button>
+        <button className="header--buttons"><Link to="/categories">{language==='gr'?'Μουσικά όργανα':'Musical instruments'}</Link></button>
+        <button className="header--buttons"><Link to="/someInfo">{language==='gr'?'Λίγα λόγια':'About'}</Link></button>
+        <button className="header--buttons"><Link to="/contact">{language==='gr'?'Επικοινωνία':'Contact'}</Link></button>
+        <button className='langBtn' onClick={()=>changeLanguage('gr')}><img src="../icons/Flag-Greece.jpg" alt='gr'/></button>
+        <button className='langBtn' onClick={()=>changeLanguage('en')} style={{marginRight: "12px"}}><img src="../icons/english.webp" alt='en'/></button>
         <Outlet />
       </div>
       </header>

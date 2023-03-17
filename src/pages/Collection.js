@@ -104,7 +104,7 @@ export default function Collection(props) {
           <div className="price--info">{props.language==='gr'?'Η τελική τιμή αυξάνεται με την προσθήκη διακόσμησης που επιλέγετε. Επικοινωνήστε μαζί μας αν ενδιαφέρεστε για ένα προιόν.':'The total price increases if you whish to add decoration. Contact with us in case you are interested in one of our products.'} </div>
           <div className="filters--3" style={{flexDirection:'row'}}>
             <h4>{props.language==='gr'?'Ετοιμοπαράδωτα:':'Available:'}</h4>
-            <input checked={available} onChange={()=>setAvailable(prevAvail => !prevAvail)} style={{width:'20px', marginLeft:'7px'}} type={"checkbox"}></input>
+            <input className="availInput" checked={available} onChange={()=>setAvailable(prevAvail => !prevAvail)} style={{ marginLeft:'7px'}} type={"checkbox"}></input>
           </div> 
           <div className="filters--3">
             <h4>{props.language==='gr'?'Ηχητικό υλικό:':'Listen to:'}</h4>
@@ -118,7 +118,7 @@ export default function Collection(props) {
             <button onClick={categorizeByUser} value="Μπαγλαμάς">{props.language==='gr'?'Μπαγλαμάς':'Baglamas'}</button>
             <button onClick={categorizeByUser} value="Λαούτο">{props.language==='gr'?'Λαούτο':'Laouto'}</button>
             <button onClick={categorizeByUser} value="Μαντολίνο">{props.language==='gr'?'Μαντολίνο':'Mantolino'}</button>
-            <button onClick={categorizeByUser} value="Νέι">{props.language==='gr'?'Νέι/μπασπαρέ':'Nei'}</button>
+            <button onClick={categorizeByUser} value="Νέι">{props.language==='gr'?'Νέι':'Nei'}</button>
           </div>
         </div>
         <div className="cardContainer">

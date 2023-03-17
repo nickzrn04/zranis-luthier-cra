@@ -4,6 +4,8 @@ img {
   object-fit: contain;
 }
 
+
+
 .card {
   margin-top: 70px;
   display: flex;
@@ -166,6 +168,11 @@ select {
   left: 520px;
 }
 
+.availInput {
+  width: 20px;
+  transform: scale(1);
+}
+
 
 @media all and (min-width: 768px) and (max-width: 1000px) {
   body,main,section,.card,.cardContainer {
@@ -189,7 +196,7 @@ select {
   .categories {
     flex-direction: row;
     height: 50px;
-    margin-top: 3px;
+    margin-top: 7px;
     justify-content: space-between;
     background-color: rgb(243, 207, 163);
   }
@@ -213,6 +220,7 @@ select {
   .filters--3 {
     flex-direction: row; 
     margin: 0;
+    margin-top: 5px;
     align-items: center;
     float: left;
   }
@@ -260,7 +268,7 @@ select {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 100%;
-    margin-top: 3px;
+    margin-top: 15px;
     justify-content: space-between;
     background-color: rgb(243, 207, 163);
   }
@@ -284,6 +292,7 @@ select {
   .filters--3 {
     flex-direction: row; 
     margin: 0;
+    margin-top: 10px;
     align-items: center;
     float: left;
   }
@@ -314,5 +323,13 @@ select {
   }
   .empty {
     left: 100px;
+  }
+  .availInput {
+    width: 10px;
+    transform: scale(2);
+  }
+  .availDiv {
+    padding-right: 1px;
+    padding-left: 1px;
   }
 }
