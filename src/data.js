@@ -56,13 +56,13 @@ export default [
 
 {
   title: "Κιθάρα κλασσική",
-  id: "#K6Ε1",
+  id: "#K6Ο1",
   type: "Κιθάρα",
-  διαστάσειςΟργάνου: "Κλίμακα 65cm",
+  διαστάσειςΟργάνου: "Κλίμακα 64cm",
   διαστάσειςΗχείου: {
     μήκος: "48cm",
-    πλάτος : "36.5cm",
-    βάθος: "10cm"
+    πλάτος : "35.5cm max",
+    βάθος: "9.3-9.8cm"
   },
   ξύλοΚαπακιού: "Έλατο ΑΑΑ",
   ξύλοΣκάφους: "Μαόνι",
@@ -72,8 +72,8 @@ export default [
   κλειδιά: "Grover",
   φιγούρα: "0",
   λούστρο: "Γομολάκα",
-  description: "Στην τιμή δεν συμπεριλαμβάνεται θήκη.",
-  τιμή: 700,
+  description: "Studio κιθάρα μοντέλο Jose Romanillos. Στην τιμή δεν συμπεριλαμβάνεται θήκη.",
+  τιμή: 1000,
   pictures: ["guitar/classic maoni 4.jpg","guitar/classic maoni 1.jpg","guitar/classic maoni 2.jpg","guitar/classic maoni 3.jpg"],
   avail: false,
 },
