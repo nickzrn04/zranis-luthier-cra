@@ -37,7 +37,7 @@ function App() {
           <li><Link to="/contact">{language==='gr'?'Επικοινωνία':'Contact'}</Link></li>
         </ul>
       </div>
-      <div style={{display: "flex", marginRight: "30px"}}> 
+      <div className='headerButtons' style={{display: "flex", marginRight: "30px"}}> 
         <button className="header--buttons"><Link to="/">{language==='gr'?'Αρχική':'Home'}</Link></button>
         <button className="header--buttons"><Link to="/categories">{language==='gr'?'Μουσικά όργανα':'Musical instruments'}</Link></button>
         <button className="header--buttons"><Link to="/someInfo">{language==='gr'?'Λίγα λόγια':'About'}</Link></button>
