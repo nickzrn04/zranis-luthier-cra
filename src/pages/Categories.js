@@ -41,13 +41,13 @@ export default function Categories(props) {
         </Link>
         <Link to="/Μαντολινο">
           <div value="Μαντολινο" style={{display: "flex", flexDirection: "column"}}>
-          <img src="../material/photos/laouto/laouto front.jpg" alt="cant load"/>
+          <img src="../material/photos/mantolino/antoni (1).jpg" alt="cant load"/>
             <div className="category--title"><p>{props.language==='gr'?'Μαντολίνο':'Mantolino'}</p></div>
           </div>
         </Link>
         <Link to="/Νει">
           <div value="Νει" style={{display: "flex", flexDirection: "column"}}>
-          <img src="../material/photos/laouto/laouto front.jpg" alt="cant load"/>
+          <img src="../material/photos/nei/nei.jpg" alt="cant load"/>
           <div className="category--title"><p>{props.language==='gr'?'Νέι/μπασπαρέ':'Nei'}</p></div>
           </div>
         </Link>
