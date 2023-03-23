@@ -23,8 +23,8 @@ function App() {
     <header className="header">
       <div style={{display: 'flex', flexDirection: 'column'}}>
         <div className="logo">
-          <div style={{fontSize: "35px",fontWeight: "700"}}>Οργανοποιείο</div>
-          <div style={{fontSize: "25px", fontWeight: "500", paddingLeft: "1px"}}>Πέτρος Ζαράνης</div>
+          <div className='logo--main'>Οργανοποιείο</div>
+          <div className='logo--name'>Πέτρος Ζαράνης</div>
         </div>
         <input id="menu-toggle" type="checkbox" />
         <label className='menu-button-container' htmlFor="menu-toggle">
