@@ -198,7 +198,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 170px;
+  margin-left: 174px;
 }
 
 #menu-toggle {
@@ -297,12 +297,12 @@ html, body {
 }
 
 @media all and (max-width: 767px){
-  body,main,section {
+  body,main,section,header {
     width: 100%;
     padding: 10px;
   }
   .header {
-    justify-content: right;
+    justify-content: center;
   }
   .headerButtons {
     flex-direction: column;
