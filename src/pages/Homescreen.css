@@ -4,6 +4,7 @@ body {
   padding: 5px;
 }
 
+
 p {
   font-family: Roboto;
 }
@@ -197,6 +198,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 170px;
 }
 
 #menu-toggle {

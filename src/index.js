@@ -21,7 +21,7 @@ function App() {
     <>
     <BrowserRouter>
     <header className="header">
-      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+      <div style={{display: 'flex', flexDirection: 'column'}}>
         <div className="logo">
           <div style={{fontSize: "35px",fontWeight: "700"}}>Οργανοποιείο</div>
           <div style={{fontSize: "25px", fontWeight: "500", paddingLeft: "1px"}}>Πέτρος Ζαράνης</div>
