@@ -57,7 +57,7 @@ export default function Card(props) {
         <p>{gr?'Τελική τιμή(+Φ.Π.Α 24%):':'Plus VAT(24%):'} {props.τιμή+(props.τιμή*24/100)}€</p>
       </div>
       <div className="description" style={{display: "flex", flexDirection: "column", alignItems: "center", overflowWrap: "break-word"}}>
-        <h2 className="description-h"><p>Περιγραφή</p></h2>
+        <h2 className="description-h"><p>{gr?"Περιγραφή":"Description"}</p></h2>
         <p style={{margin: "none"}} className="card--description">{gr?props.περιγραφή:props.description}</p>
       </div>
 
