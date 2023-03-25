@@ -169,8 +169,8 @@ export default [
 },
 
 {
-  τίτλος: "Semi-hollow κιθάρα",
-  title: "Semi-hollow guitar",
+  τίτλος: "Τζαζ κιθάρα",
+  title: "Jazz guitar",
   id: "#K6Ε4",
   type: "Κιθάρα",
   διαστάσειςΟργάνου: "Κλίμακα 65cm",
@@ -189,7 +189,7 @@ export default [
   αριθμόςΔουγών : "0",
   ταστιέρα: "Έβενος",
   fretboard: "Ebony",
-  κλειδιά: "-",
+  κλειδιά: "Schaller",
   φιγούρα: "-",
   figure: "-",
   λούστρο: "Γυαλιστερό ακρυλικό",
