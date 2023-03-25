@@ -108,7 +108,7 @@ export default function Collection(props) {
           </div> 
           <div className="filters--3">
             <h4>{props.language==='gr'?'Ηχητικό υλικό:':'Listen to:'}</h4>
-            <a target="_blank" href="https://www.youtube.com/@ZaranisPetros"><img src="../icons/youtube logo.jpg" alt="cant load"></img></a>
+            <a target="_blank" href="https://www.youtube.com/@petroszaranis8740"><img src="../icons/youtube logo - 2.jpg" alt="cant load"></img></a>
           </div> 
           <div className="categories">
             <u style={{textAlign: "center"}}>{props.language==='gr'?'Κατηγορίες':'Categories'}</u>
@@ -160,4 +160,5 @@ export default function Collection(props) {
       })
     }
   }
+
 }

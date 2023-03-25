@@ -53,14 +53,14 @@ function App() {
           <Route path='categories' element={<Categories language={language}/>}/>
           <Route path='someInfo' element={<InfoPage language={language}/>}/>
           <Route path='contact' element={<Contact language={language}/>}/>
-          <Route path='Μπουζουκι' element={<Collection language={language} avail={false} type="Μπουζούκι"/>}/>
-          <Route path='Λαουτο' element={<Collection language={language} avail={false}  type="Λαούτο"/>}/>
-          <Route path='Μπαγλαμας' element={<Collection language={language} avail={false}  type="Μπαγλαμάς"/>}/>
-          <Route path='Τζουρας' element={<Collection language={language} avail={false}  type="Τζουράς"/>}/>
-          <Route path='Αρχαια' element={<Collection language={language} avail={false}  type="Αρχαια"/>}/>
-          <Route path='Μαντολινο' element={<Collection language={language} avail={false}  type="Μαντολίνο"/>}/>
-          <Route path='Κιθαρα' element={<Collection language={language} avail={false}  type="Κιθάρα"/>}/>
-          <Route path='Νει' element={<Collection language={language} avail={false}  type="Νέι"/>}/>
+          <Route path='Μπουζούκι' element={<Collection language={language} avail={false} type="Μπουζούκι"/>}/>
+          <Route path='Λαούτο' element={<Collection language={language} avail={false}  type="Λαούτο"/>}/>
+          <Route path='Μπαγλαμάς' element={<Collection language={language} avail={false}  type="Μπαγλαμάς"/>}/>
+          <Route path='Τζουράς' element={<Collection language={language} avail={false}  type="Τζουράς"/>}/>
+          <Route path='Αρχαία' element={<Collection language={language} avail={false}  type="Αρχαια"/>}/>
+          <Route path='Μαντολίνο' element={<Collection language={language} avail={false}  type="Μαντολίνο"/>}/>
+          <Route path='Κιθάρα' element={<Collection language={language} avail={false}  type="Κιθάρα"/>}/>
+          <Route path='Νέι' element={<Collection language={language} avail={false}  type="Νέι"/>}/>
           <Route path='categories2' element={<Collection language={language} avail={true} type="Μπουζούκι"/>}/>
           <Route path='*' element={<Homescreen language={language}/>}/>
         </Route>

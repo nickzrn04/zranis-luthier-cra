@@ -47,7 +47,7 @@ export default function Contact(props) {
           <p style={{marginBottom: "25px"}}>&#x2022; {props.language=='gr'?'Τρίτη,Πέμπτη,Παρασκευή: 17:00 - 19:00 μ.μ.':'Tuesday,Thursday,Friday: 17:00 - 19:00 pm'}</p>
           <u>{props.language=='gr'?'Επικοινωνία':'Contact'}</u>
           <p>&#x2022; {props.language=='gr'?'Τηλ: 210-9933092':'Phone: 210-9933092'}</p>
-          <p>&#x2022; E-mail: petros@p-zaranis.gr</p>
+          <p>&#x2022; E-mail: zaranisluthier@gmail.com</p>
           <p>&#x2022; {props.language=='gr'?'Facebook: Πέτρος Ζαράνης':'Facebook: Petros Zaranis'}</p>
         </div>
         <GoogleMap zoom={16} center={center} mapContainerClassName="map--container">

@@ -4,6 +4,16 @@ img {
   object-fit: contain;
 }
 
+.zoom {
+  position: relative;
+  left: 112px;
+  bottom: 60px;
+}
+
+.zoom button {
+  width: 40px;
+  height: 30px;
+}
 
 .card {
   margin-top: 70px;

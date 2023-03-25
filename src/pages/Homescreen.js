@@ -37,10 +37,11 @@ function Homescreen(props) {
             </Link>
         </div>
         <div className='floor2' style={{justifyContent: "space-between", alignItems: "center"}}>
-          <YoutubeEmbed embedId='lRvu2bJBflw'/>
+          <YoutubeEmbed embedId='fGWENPTmFU0'/>
           <p style={{fontWeight: "bold"}}>{props.language=='gr'?'Περισσότερα:':'More videos:'}</p>
           <div style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
             <a href='https://www.youtube.com/@ZaranisPetros' target="_blank"><img style={{width: "200px", height: "100%", border: "solid 2px orange"}} src='./icons/youtube logo.jpg'></img></a>
+            <a href='https://www.youtube.com/@petroszaranis8740' target="_blank"><img style={{width: "200px", height: "100%", border: "solid 2px orange"}} src='./icons/youtube logo - 2.jpg'></img></a>
             <a href='https://www.facebook.com/profile.php?id=100004094417639' target="_blank"><img style={{width: "200px", height: "100%", border: "solid 2px orange"}} src='./icons/fb.png'></img></a>
           </div>
         </div>
